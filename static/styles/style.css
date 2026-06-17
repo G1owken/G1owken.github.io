@@ -5,26 +5,46 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: rgb(255, 145, 0);
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 
-    min-height: 100vh;
-    padding: 20px;
+    width: 100%;
+    background-color: black;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.heading h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.company-logo {
+    width: 200px;
+    height: auto;
 }
 
 .card {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
 
-    background-color: white;
+    background-color: #000;
     border-radius: 12px;
     overflow: hidden;
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 
     text-align: center;
     padding-bottom: 20px;
@@ -38,8 +58,15 @@ body {
 
 .product-title {
     font-size: 24px;
+    color: white;
     margin: 15px;
-    color: #333;
+}
+
+.product-description {
+    color: #dcdcdc;
+    font-size: 16px;
+    margin: 0 15px 20px;
+    line-height: 1.5;
 }
 
 .product-price {
@@ -51,27 +78,36 @@ body {
 
 .buy-button {
     padding: 12px 24px;
+
     border: none;
     border-radius: 8px;
 
-    background-color: #033c7a;
+    background-color: #d27000;
     color: white;
 
     font-size: 16px;
     cursor: pointer;
 
-    transition: 0.3s;
+    transition: all 0.5s ease;
 }
 
 .buy-button:hover {
-    background-color: #0870df;
-    transform: scale(1.1);
+    background-color: #ff8c00;
+    transform: scale(1.2);
 }
 
-/* Это если с мобилки открывать */
+/* Условие для изменений стилей на маленьких экранах/ на мобилках */
 @media (max-width: 320px) {
+    .heading h1 {
+        font-size: 24px;
+    }
+
     .product-title {
         font-size: 20px;
+    }
+
+    .product-description {
+        font-size: 14px;
     }
 
     .product-price {
