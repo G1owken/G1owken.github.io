@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -96,23 +102,34 @@ body {
     transform: scale(1.2);
 }
 
-/* Используем 768px, чтобы охватить все планшеты и смартфоны */
-@media (max-width: 768px) {
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 600px) {
     .heading {
-        flex-direction: column; 
-        gap: 15px; 
-        text-align: center;
+        flex-direction: column;
+        padding: 10px;
     }
 
     .heading h1 {
-        font-size: 24px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .company-logo {
+        width: 120px; 
     }
 
     .card {
-        width: 90%; 
+        width: 95%; 
+        margin: 10px auto;
     }
 
-    .buy-button {
-        width: 80%; 
+    .product-title {
+        font-size: 18px;
+    }
+
+    .product-description {
+        font-size: 14px;
+        padding: 0 10px;
     }
 }
