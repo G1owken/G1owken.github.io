@@ -96,25 +96,23 @@ body {
     transform: scale(1.2);
 }
 
-/* Условие для изменений стилей на маленьких экранах/ на мобилках */
-@media (max-width: 320px) {
+/* Используем 768px, чтобы охватить все планшеты и смартфоны */
+@media (max-width: 768px) {
+    .heading {
+        flex-direction: column; 
+        gap: 15px; 
+        text-align: center;
+    }
+
     .heading h1 {
         font-size: 24px;
     }
 
-    .product-title {
-        font-size: 20px;
-    }
-
-    .product-description {
-        font-size: 14px;
-    }
-
-    .product-price {
-        font-size: 18px;
+    .card {
+        width: 90%; 
     }
 
     .buy-button {
-        width: 90%;
+        width: 80%; 
     }
 }
