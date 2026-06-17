@@ -106,8 +106,9 @@ body {
 /* Адаптация под мобильные устройства */
 @media (max-width: 600px) {
     .heading {
-        flex-direction: column;
+        flex-direction: row;
         padding: 10px;
+        justify-content: space-between;
     }
 
     .heading h1 {
