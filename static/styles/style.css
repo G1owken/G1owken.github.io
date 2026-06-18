@@ -149,30 +149,39 @@ body {
     .products-container {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 30px; 
         padding: 0 10px;
     }
 
     .card {
-        width: 100%; 
-        max-width: 400px;
-        margin: 0 auto;
+        width: 100%;       
+        max-width: 350px;  
+        margin: 0;       
     }
 
     .product-image {
-        height: 200px;     
+        height: 180px;     
     }
 
     .product-title {
-        font-size: 18px;
+        font-size: 20px;   
+        margin: 10px;
     }
 
     .product-description {
         font-size: 14px;
-        padding: 0 10px;
+        padding: 0 15px;
+        margin-bottom: 15px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3; 
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
+
     .buy-button {
-        width: 90%;        
-        padding: 15px 0;   
+        width: 85%;
+        margin-bottom: 20px; 
+        padding: 14px 0;
     }
 }
