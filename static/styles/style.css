@@ -154,8 +154,13 @@ body {
     }
 
     .card {
-        width: 95%; 
-        margin: 10px auto;
+        width: 100%; 
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .product-image {
+        height: 200px;     
     }
 
     .product-title {
@@ -165,5 +170,9 @@ body {
     .product-description {
         font-size: 14px;
         padding: 0 10px;
+    }
+    .buy-button {
+        width: 90%;        
+        padding: 15px 0;   
     }
 }
