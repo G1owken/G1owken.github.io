@@ -172,8 +172,8 @@ body {
         font-size: 14px;
         padding: 0 15px;
         margin-bottom: 15px;
-        -webkit-box-orient: vertical;
-        overflow-y: auto;
+        word-wrap: break-word;
+        color: white;
     }
 
     .buy-button {
